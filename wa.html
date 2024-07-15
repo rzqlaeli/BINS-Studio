@@ -1,0 +1,119 @@
+<html>
+  <head>
+  </head>
+  <style>
+    *{
+      font-family: Arial, sans-serif;
+    }
+    form{
+      margin: 50px auto;
+      width: 500px;
+      font-size: 16px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 30px;
+      background-color: #74512d;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    form h1{
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+      color: #f8f4e1;
+      margin-bottom: 20px;
+    }
+    form label{
+      display: block;
+      margin-bottom: 5px;
+      color: #f8f4e1;
+      font-size: small;
+    }
+    form input, form textarea{
+      width: 100%;
+      padding: 5px;
+      margin-bottom: 10px;
+      box-sizing: border-box;
+      resize: vertical;
+      border: 1px solid #f8f4e1;
+      border-radius: 15px;
+    }
+    form button{
+      background: #543310;
+      color: white;
+      padding: 10px 15px;
+      margin-top: 5px;
+      border: none;
+      cursor: pointer;
+    }
+    form button:hover{
+      background: #AF8F6F;
+    }
+    body {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+    }
+
+      a img {
+            width: 30px;
+            height: 40px;
+            margin-top: 30px;
+            margin-left: -630px;
+        }
+  </style>
+  <body>
+    <div class="panah">
+      <a href="book-now.html"><img src="img/panah.png" alt="panah"></a>
+    </div>
+    
+    <form>
+      <h1>Isi Data Di bawah Ini</h1>
+      <label for="nama">Nama</label>
+      <input type="text" class="nama">
+
+      <label for="email">Email</label>
+      <input type="text" class="email">
+
+      <label for="nomor">Nomor Telepon</label>
+      <input type="text" class="nomor">
+
+      <label for="alamat">Alamat</label>
+      <input type="text" class="alamat">
+
+      <label for="proyek">Jenis Proyek</label>
+      <input type="text" class="proyek">
+
+      <label for="keterangan">Keterangan</label>
+      <textarea class="keterangan"></textarea>
+      <button type="button" onclick="sendwhatsapp();">Kirim</button>
+  </form>
+
+  <script>
+      function sendwhatsapp() {
+          var phonenumber = "+6282210537518";
+
+          var nama = document.querySelector(".nama").value;
+          var email = document.querySelector(".email").value;
+          var nomor = document.querySelector(".nomor").value;
+          var alamat = document.querySelector(".alamat").value;
+          var proyek = document.querySelector(".proyek").value;
+          var keterangan = document.querySelector(".keterangan").value;
+
+          var url = "https://wa.me/" + phonenumber + "?text="
+              + "*Nama :* " + nama + "%0a"
+              + "*Email :* " + email + "%0a"
+              + "*Nomor Telepon:* " + nomor + "%0a"
+              + "*Alamat :* " + alamat + "%0a%0a"
+              + "*Jenis Proyek:* " + proyek + "%0a"
+              + "*Keterangan :* " + keterangan + "%0a%0a"
+              + "Berikut Data Pesanan";
+
+          window.open(url, '_blank').focus();
+      }
+  </script>
+  </body>
+</html>

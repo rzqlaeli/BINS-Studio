@@ -1,0 +1,267 @@
+<html>
+    <head>
+        <title>BINS Studio</title>
+        <link rel="stylesheet" href="style/reset.css">
+        <link rel="stylesheet" href="style/style.css">
+        <link rel="stylesheet" href="style/owl.carousel.css">
+        <link rel="stylesheet" href="style/owl.theme.default.min.css">
+        <script src="js/jquery.js" charset="utf-8"></script>
+        <script src="js/jquery3.4.1.min.js" charset="utf-8"></script>
+        <script src="counter.js"></script>
+        <script src="js/owl.carousel.js" charset="utf-8"></script>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <nav id="navbar">
+        <div class="header">
+            <img src="img/logo.jpg" alt="BINS Studio" class="logo">
+            <a href="book-now.html" class="masuk">Book Now</a>
+            <ul id="menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#info">Tentang Kami</a></li>
+                <li><a href="#benefit">Benefit</a></li>
+                <li><a href="#testimoni">Testimoni</a></li>
+                <li><a href="#footer">Kontak</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <div class="container">
+          <section class="home" id="home">
+            <div class="main">
+                <img src="img/1.jpg" class="img1" alt="rumah">
+                <h1>Design The Home of </h1>
+                <h2>Your Dream</h2>
+                <h3>With BINS Studio</h3>
+                    <div class="frame2">
+                    <img src="img/2.jpg" class="img2" alt="tangga">
+                    <p>Selamat datang di situs kami yang menyajikan berbagai inspirasi dan tips terbaik dalam desain eksterior dan interior. Di sini, Anda akan menemukan beragam ide kreatif dan inovatif untuk mempercantik tampilan rumah Anda, baik dari luar maupun dalam. Mulai dari konsep desain minimalis hingga klasik, kami menyediakan panduan lengkap untuk membantu Anda menciptakan ruang yang nyaman, estetis, dan fungsional.</p>
+                    <div class="counter-container">
+                      <div class="counter-item">
+                          <div class="counter-number" data-target="300">0</div>
+                          <div class="counter-label">Curated Designers</div>
+                      </div>
+                      <div class="counter-item">
+                          <div class="counter-number" data-target="500">0</div>
+                          <div class="counter-label">Design Options</div>
+                      </div>
+                  </div>
+              
+                  <script>
+                      document.addEventListener("DOMContentLoaded", function() {
+                          const counters = document.querySelectorAll('.counter-number');
+              
+                          counters.forEach(counter => {
+                              const updateCount = () => {
+                                  const target = +counter.getAttribute('data-target');
+                                  const count = +counter.innerText;
+                                  const increment = target / 200; // Adjust this value to control speed
+              
+                                  if (count < target) {
+                                      counter.innerText = Math.ceil(count + increment);
+                                      setTimeout(updateCount, 10);
+                                  } else {
+                                      counter.innerText = target;
+                                  }
+                              };
+              
+                              updateCount();
+                          });
+                      });
+                  </script>
+                    </div>
+
+        <div class="info-container">
+            <div class="info-item">
+                <img src="img/i1.png" class="Eksterior" alt="eksterior">
+                <h2>Desain Eksterior</h2>
+                <p>Desain interior adalah seni dan ilmu dalam meningkatkan interior bangunan untuk mencapai lingkungan yang lebih sehat dan estetis bagi orang-orang yang menggunakan ruang tersebut.</p>
+            </div>
+            <div class="info-item">
+                <img src="img/i2.png" class="Arsitektur" alt="arsitektur">
+                <h2>Arsitektur</h2>
+                <p>Arsitektur adalah seni dan ilmu merancang bangunan serta struktur fisik lainnya yang mencakup perencanaan, perancangan, dan konstruksi.</p>
+            </div>
+            <div class="info-item">
+                <img src="img/i3.png" class="Interior" alt="interior">
+                <h2>Desain Interior</h2>
+                <p>Desain interior modern menggabungkan estetika minimalis dengan fungsionalitas maksimal, menonjolkan ruang terbuka yang terang dan lapang. </p>
+            </div>
+        </div>
+      </section>
+
+      <section class="info"  id="info"> 
+        <div class="information-container">
+            <h1>INFORMASI</h1>
+            <div class="teks-info">
+                <img src="img/3.png" class="satu" alt="satu">
+                <p>Ingin punya rumah impian dengan desain yang aesthetik BINS STUDIO solusinya tersedia berbagai desain interior dan eksterior yang
+                        menarik, bisa costume juga sesuai dengan disain yang di inginkan</p>
+                <img src="img/4.png" class="dua" alt="dua">
+            </div>
+        </div>
+      </section>
+
+        <section class="benefit" id="benefit">
+            <div class="left">
+                <div class="img">
+                  <img src="img/5.png" alt="">
+                </div>
+              </div>
+
+            
+          <section class="benefit" id="benefit">
+            <div class="right">
+            <h1>Keuntungan yang di dapat</h1>
+            <button class="accordion  "> <label>1. Desain Inovatif</label> </button>
+            <div class="panel active">
+              <p>Dengan fokus pada kreativitas dan inovasi, Bins Studio menawarkan berbagai pilihan desain yang unik dan modern, sesuai dengan tren terbaru dan kebutuhan spesifik Anda.</p>
+            </div>
+    
+            <button class="accordion">2. Layanan Pelanggan yang Responsif</button>
+            <div class="panel">
+              <p>Tim layanan pelanggan Bins Studio siap membantu Anda dengan segala pertanyaan atau kebutuhan yang mungkin timbul selama proses pemesanan dan setelahnya.</p>
+            </div>
+    
+            <button class="accordion">3. Desain Kustom</button>
+            <div class="panel">
+              <p>Bins Studio menawarkan desain yang dapat disesuaikan dengan keinginan dan kebutuhan spesifik Anda, memastikan setiap detail mencerminkan gaya pribadi Anda.</p>
+            </div>
+    
+            <button class="accordion"> 4. Garansi Produk</button>
+            <div class="panel">
+              <p>Bins Studio memberikan garansi untuk produk dan jasa mereka, memberikan Anda ketenangan pikiran dan jaminan kualitas.</p>
+            </div>
+        </div>
+        </section>
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+        
+            for (i = 0; i < acc.length; i++) {
+              acc[i].addEventListener("click", function() {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.display === "block") {
+                  panel.style.display = "none";
+                } else {
+                  panel.style.display = "block";
+                }
+              });
+            }
+          </script>
+        
+        
+        <section class="Testimonials" id="testimoni">
+            <div class="container">
+              <h5>HAPPY CLIENTS </h5>
+              <h2>Testimonials</h2>
+        
+              <div class="owl-carousel owl-theme">
+                <div class="item  ">
+                  <div class="box flex">
+                    <div class="img">
+                      <img src="img/intan.png" alt=""><br>
+                    </div>
+                    <div class="text">
+                      <h3>Intan Livanty</h3>
+                      <h5>OWNER OF BUILDING CO.</h5><br>
+                    </div>
+                  </div>
+                  <p> "Saya sangat puas dengan hasil kerja Bins Studio. Mereka berhasil mengubah ruang tamu saya menjadi lebih modern dan nyaman"</p>
+                </div>
+                <div class="item  ">
+                  <div class="box flex">
+                    <div class="img">
+                      <img src="img/saidah.png" alt=""><br>
+                    </div>
+                    <div class="text">
+                      <h3>Saidah Putri</h3>
+                    </div>
+                  </div>
+                  <p> "Pengalaman bekerja dengan Bins Studio sangat menyenangkan. Desainer mereka sangat mendengarkan kebutuhan kami dan memberikan saran yang tepat"</p>
+                </div>
+                <div class="item  ">
+                  <div class="box flex">
+                    <div class="img">
+                      <img src="img/bintari.png" alt=""><br>
+                    </div>
+                    <div class="text">
+                      <h3>Bintari Regdina</h3>
+                    </div>
+                  </div>
+                  <p> "Kami memilih Bins Studio untuk proyek desain interior apartemen baru kami, dan kami tidak menyesal! Layanan yang diberikan sangat memuaskan, mulai dari konsultasi awal hingga pemasangan akhir" </p>
+                </div>
+                <div class="item  ">
+                  <div class="box flex">
+                    <div class="img">
+                      <img src="img/niki.png" alt=""><br>
+                    </div>
+                    <div class="text">
+                      <h3>Rizqi Laeli</h3>
+                    </div>
+                  </div>
+                  <p> "Bins Studio membantu kami merenovasi taman belakang dan hasilnya luar biasa! Timnya sangat kreatif dan berpengalaman, memberikan solusi yang inovatif dan estetis"</p>
+                </div>
+              </div>
+            </div>
+          </section>
+        
+          <script>
+            $('.owl-carousel').owlCarousel({
+              loop: true,
+              margin: 10,
+              nav: false,
+              dots: true,
+              autoplay: true,
+              responsive: {
+                0: {
+                  items: 1
+                },
+                800: {
+                  items: 2
+                },
+                1000: {
+                  items: 3
+                }
+              }
+            })
+          </script>
+        
+        <section class="footer" id="footer">
+        <footer>
+          <div class="container-footer">
+              <div class="nav-item ">
+                <h3>BINS Studio</h3>
+                <div class="item_box_flex1 ">
+                  <ul>
+                    <li><a href="">Home</a></li>
+                      <li><a href="">Tentang Kami</a></li>
+                      <li><a href="">Benefit</a></li>
+                      <li><a href="">Testimoni</a></li>
+                      <li><a href="">Kontak</a></li>
+                  </ul>
+                </div>
+              </div>
+
+      
+              <div class="email-item">
+                
+                <p>Jika ada saran dan masukan boleh untuk isi email dibawah</p>
+                <input type="text" placeholder="Enter Email">
+                <label class="label">Send</label>
+                <div class="icon">
+                 
+                  <i class="fa fa-whatsapp"> <a href="https://wa.me/081382918051"></a></i>
+                  <i class="fa fa-instagram"> <a href="https://www.instagram.com/rzqlaelii"></a></i>
+                  <i class="fa fa-youtube"> <a href=""></a></i>
+                  <i class="fa fas fa-twitter"> <a href=""></a></i>
+                </div>
+              </div>
+            <p class="legal">&copy; BINS Studio 2024</p>
+          </div>
+        </footer>
+      </section>
+      
+    </body>
+</html>
